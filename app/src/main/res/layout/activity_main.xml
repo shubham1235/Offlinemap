@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.shubham_v.trigentmap.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark">
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:weightSum="1"
+            android:background="#aaaaaa"
+            android:clickable="true" />
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/common_google_signin_btn_text_dark_default" />
+
+    </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/main_map_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/Navigation_Activity_id"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center|left"
+                android:background="@drawable/root" />
+
+            <Button
+                android:id="@+id/current_location_button_id"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center|bottom|right"
+                android:background="@drawable/navigation_button2" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

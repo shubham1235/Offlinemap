@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_navigation_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   tools:context="com.example.shubham_v.trigentmap.NavigationSearch">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <TextView
+            android:text="find Root for navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        >
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1"
+            >
+            <SearchView
+                android:id="@+id/source_view_search_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:weightSum="1"
+                android:background="#aaaaaa"
+                android:clickable="true" />
+
+            <ListView
+                android:id="@+id/source_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/common_google_signin_btn_text_dark_default" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <SearchView
+                android:id="@+id/destination_view_search_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:weightSum="1"
+                android:background="#aaaaaa"
+                android:clickable="true" />
+
+
+            <ListView
+                android:id="@+id/destination_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/common_google_signin_btn_text_dark_default" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_google_signin_btn_text_dark_default">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:id="@+id/Navigation_Map_FrameLayout_id">
+
+
+    </FrameLayout>
+        <Button
+            android:id="@+id/Navigation_Button_id"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center|bottom|right"
+            android:background="@drawable/activityrootnavigation" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
